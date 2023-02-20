@@ -3,10 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Violet/AndroidStudioProjects/PitScoutingApp23/app/src/main/res/layout/activity_comments.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Violet/AndroidStudioProjects/PitScoutingApp23/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Violet/AndroidStudioProjects/PitScoutingApp23/app/src/main/res/layout/activity_picture_screen.xml" value="0.75" />
-        <entry key="..\:/Users/Violet/AndroidStudioProjects/PitScoutingApp23/app/src/main/res/layout/activity_tech_specs.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/satch/Desktop/Crevolution Build Season Projects/PitScouting2023_legacysupport/app/src/main/res/layout/activity_main.xml" value="0.8" />
+        <entry key="..\:/Users/satch/Desktop/Crevolution Build Season Projects/PitScouting2023_legacysupport/app/src/main/res/layout/activity_picture_screen.xml" value="0.72" />
       </map>
     </option>
   </component>
