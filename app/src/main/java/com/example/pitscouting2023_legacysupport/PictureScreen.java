@@ -21,6 +21,11 @@ public class PictureScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_picture_screen);
 
+        //get rid of action bar when running the app
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
+
         frontCaptureBtn = findViewById(R.id.captureFrontBtn);
         backCaptureBtn = findViewById(R.id.captureBackBtn);
         sideCaptureBtn = findViewById(R.id.captureSideBtn);

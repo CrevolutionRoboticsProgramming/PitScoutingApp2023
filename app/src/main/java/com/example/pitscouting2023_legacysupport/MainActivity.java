@@ -15,6 +15,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //get rid of action bar when running the app
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
+
         picScreenBtn = findViewById(R.id.picScreenBtn);
 
         picScreenBtn.setOnClickListener(new View.OnClickListener() {
