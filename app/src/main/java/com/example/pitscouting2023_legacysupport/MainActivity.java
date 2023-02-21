@@ -17,8 +17,6 @@ public class MainActivity extends AppCompatActivity {
     ImageView crevolutionLogoPic, startScreenBackground, startBtnUnderline;
     TextView pitScoutingTxt;
 
-    //test
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
