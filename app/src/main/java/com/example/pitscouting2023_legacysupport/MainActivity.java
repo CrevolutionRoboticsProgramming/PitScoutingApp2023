@@ -6,9 +6,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     Button picScreenBtn;
+
+    //creating variables for everything on the .xml file
+    Button startBtn;
+    ImageView crevolutionLogoPic, startScreenBackground, startBtnUnderline;
+    TextView pitScoutingTxt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,14 +27,26 @@ public class MainActivity extends AppCompatActivity {
             getSupportActionBar().hide();
         }
 
-        picScreenBtn = findViewById(R.id.picScreenBtn);
+        //matching the variables created to the ids on the .xml files
+        startBtn = findViewById(R.id.start);
 
-        picScreenBtn.setOnClickListener(new View.OnClickListener() {
+        crevolutionLogoPic = findViewById(R.id.crevLogo);
+        startScreenBackground = findViewById(R.id.mainActivityBack);
+        startBtnUnderline = findViewById(R.id.startUnderline);
+
+        pitScoutingTxt = findViewById(R.id.pitScouting);
+
+
+        //click the startBtn to come to the auton screen
+        startBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent goToPicScreen = new Intent(MainActivity.this, PictureScreen.class);
-                startActivity(goToPicScreen);
+                //screen will be changed to the auton screen
+                Intent changeScreens = new Intent(MainActivity.this, Questions.class);
+                startActivity(changeScreens);
             }
         });
+
+
     }
 }
