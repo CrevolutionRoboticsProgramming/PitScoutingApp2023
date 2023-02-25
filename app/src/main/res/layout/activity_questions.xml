@@ -19,6 +19,20 @@
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/black_back" />
 
+    <ImageView
+        android:id="@+id/questionsHome"
+        android:layout_width="91dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="917dp"
+        android:layout_marginBottom="504dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home_button" />
+
     <TextView
         android:id="@+id/questionsInputBack"
         android:layout_width="1066dp"
@@ -26,39 +40,6 @@
         android:layout_marginTop="108dp"
         android:background="#63616161"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <CheckBox
-        android:id="@+id/floorCubes3"
-        style="@style/CheckBoxColor"
-        android:layout_width="76dp"
-        android:layout_height="67dp"
-        android:layout_gravity="center"
-        android:checked="false"
-        android:scaleX="1.7"
-        android:scaleY="1.7"
-        android:textSize="34sp"
-        tools:layout_editor_absoluteX="237dp"
-        tools:layout_editor_absoluteY="393dp" />
-
-    <TextView
-        android:id="@+id/conePickupTitle"
-        android:layout_width="346dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="608dp"
-        android:layout_marginTop="225dp"
-        android:layout_marginEnd="70dp"
-        android:layout_marginBottom="324dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="cone pickup-"
-        android:textAlignment="textStart"
-        android:textAllCaps="true"
-        android:textColor="#C3A341"
-        android:textSize="38sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -128,7 +109,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/gamePieceAcquisitionTitle"
@@ -220,5 +202,192 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/floorCubes"
+        style="@style/CheckBoxColor"
+        android:layout_width="64dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="396dp"
+        android:layout_marginEnd="748dp"
+        android:layout_marginBottom="141dp"
+        android:scaleX="1.7"
+        android:scaleY="1.7"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/floorCones"
+        style="@style/CheckBoxColor"
+        android:layout_width="64dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="505dp"
+        android:layout_marginEnd="748dp"
+        android:layout_marginBottom="32dp"
+        android:scaleX="1.7"
+        android:scaleY="1.7"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/HPCubes"
+        style="@style/CheckBoxColor"
+        android:layout_width="64dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="373dp"
+        android:layout_marginTop="396dp"
+        android:layout_marginEnd="587dp"
+        android:layout_marginBottom="141dp"
+        android:scaleX="1.7"
+        android:scaleY="1.7"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/HPCones"
+        style="@style/CheckBoxColor"
+        android:layout_width="64dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="373dp"
+        android:layout_marginTop="505dp"
+        android:layout_marginEnd="587dp"
+        android:layout_marginBottom="32dp"
+        android:scaleX="1.7"
+        android:scaleY="1.7"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/conePickupTitle"
+        android:layout_width="346dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="608dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="324dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="cone pickup-"
+        android:textAlignment="textStart"
+        android:textAllCaps="true"
+        android:textColor="#C3A341"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/conePickupNone"
+        style="@style/CheckBoxColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="610dp"
+        android:layout_marginTop="291dp"
+        android:layout_marginEnd="292dp"
+        android:layout_marginBottom="261dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="none"
+        android:textAllCaps="true"
+        android:textColor="#E8D175"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/conePickupHP"
+        style="@style/CheckBoxColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="610dp"
+        android:layout_marginTop="347dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="205dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="human player"
+        android:textAllCaps="true"
+        android:textColor="#E3CEA6"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/conePickupUp"
+        style="@style/CheckBoxColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="610dp"
+        android:layout_marginTop="403dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="149dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="right side up"
+        android:textAllCaps="true"
+        android:textColor="#E2B9A9"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/conePickupDown"
+        style="@style/CheckBoxColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="610dp"
+        android:layout_marginTop="458dp"
+        android:layout_marginEnd="123dp"
+        android:layout_marginBottom="94dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="knocked down"
+        android:textAllCaps="true"
+        android:textColor="#DBA892"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/conePickupAny"
+        style="@style/CheckBoxColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="610dp"
+        android:layout_marginTop="513dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="39dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="any orientattion"
+        android:textAllCaps="true"
+        android:textColor="#BA6E77"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
 
 </android.support.constraint.ConstraintLayout>
