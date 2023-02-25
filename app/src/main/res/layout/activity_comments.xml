@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/black_back" />
 
     <ImageView
-        android:id="@+id/questionsHome3"
+        android:id="@+id/commentsHome"
         android:layout_width="91dp"
         android:layout_height="90dp"
         android:layout_marginStart="16dp"
@@ -33,6 +33,145 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/home_button" />
 
+    <ImageButton
+        android:id="@+id/questionsUnclicked3"
+        android:layout_width="257dp"
+        android:layout_height="192dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginEnd="660dp"
+        android:layout_marginBottom="440dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/button_back_1"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/techspecsUnclicked3"
+        android:layout_width="247dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="332dp"
+        android:layout_marginEnd="445dp"
+        android:layout_marginBottom="440dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/button_background_2"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/commentsClicked3"
+        android:layout_width="257dp"
+        android:layout_height="192dp"
+        android:layout_marginStart="546dp"
+        android:layout_marginEnd="221dp"
+        android:layout_marginBottom="440dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/button_background_clicked"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/picturesUnclicked3"
+        android:layout_width="257dp"
+        android:layout_height="192dp"
+        android:layout_marginStart="766dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="440dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/button_background_4"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/questionsTitleText3"
+        android:layout_width="184dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="694dp"
+        android:layout_marginBottom="510dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="questions"
+        android:textAllCaps="true"
+        android:textColor="#66000000"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/techspecsTitleText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="369dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="478dp"
+        android:layout_marginBottom="511dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Tech-Spec"
+        android:textAllCaps="true"
+        android:textColor="#66040404"
+        android:textSize="33sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/commentsTitleText3"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginStart="584dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="255dp"
+        android:layout_marginBottom="510dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="comments"
+        android:textAllCaps="true"
+        android:textColor="#66000000"
+        android:textSize="33sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/picturesTitleText3"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginStart="817dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="514dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="pictures"
+        android:textAllCaps="true"
+        android:textColor="#66000000"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/commentsInputBack"
         android:layout_width="1060dp"
@@ -44,4 +183,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
