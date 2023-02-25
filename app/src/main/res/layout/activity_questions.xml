@@ -29,7 +29,21 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <CheckBox
+        android:id="@+id/floorCubes3"
+        style="@style/CheckBoxColor"
+        android:layout_width="76dp"
+        android:layout_height="67dp"
+        android:layout_gravity="center"
+        android:checked="false"
+        android:scaleX="1.7"
+        android:scaleY="1.7"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="237dp"
+        tools:layout_editor_absoluteY="393dp" />
 
     <TextView
         android:id="@+id/conePickupTitle"
@@ -206,14 +220,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <CheckBox
-        android:id="@+id/checkBox3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteX="285dp"
-        tools:layout_editor_absoluteY="462dp"
-        st/>
 
 </android.support.constraint.ConstraintLayout>
