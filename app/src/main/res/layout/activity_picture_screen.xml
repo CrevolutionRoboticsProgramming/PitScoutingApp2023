@@ -19,6 +19,34 @@
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/black_back" />
 
+    <ImageView
+        android:id="@+id/picturesHome"
+        android:layout_width="91dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.017"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998"
+        app:srcCompat="@drawable/home_button" />
+
+    <ImageButton
+        android:id="@+id/questionsUnclicked4"
+        android:layout_width="257dp"
+        android:layout_height="192dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginEnd="660dp"
+        android:layout_marginBottom="440dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/button_back_1"
+        tools:ignore="SpeakableTextPresentCheck" />
+
     <ImageButton
         android:id="@+id/techspecsUnclicked4"
         android:layout_width="247dp"
@@ -52,57 +80,54 @@
         app:srcCompat="@drawable/button_background_3"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <ImageView
-        android:id="@+id/pictureHome"
-        android:layout_width="91dp"
-        android:layout_height="90dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="6dp"
-        android:layout_marginEnd="917dp"
-        android:layout_marginBottom="504dp"
+    <ImageButton
+        android:id="@+id/picturesClicked4"
+        android:layout_width="257dp"
+        android:layout_height="192dp"
+        android:layout_marginStart="766dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="440dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/home_button" />
+        app:srcCompat="@drawable/button_background_clicked"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
-        android:id="@+id/pictureScreenTitle"
-        android:layout_width="341dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="695dp"
-        android:layout_marginBottom="422dp"
+        android:id="@+id/questionsTitleText4"
+        android:layout_width="184dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="694dp"
+        android:layout_marginBottom="510dp"
         android:fontFamily="sans-serif-medium"
-        android:text="pit photos"
+        android:text="questions"
         android:textAllCaps="true"
-        android:textColor="#FFF1AB"
-        android:textSize="38sp"
+        android:textColor="#66000000"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/pictureScreenTitleUnderline"
-        android:layout_width="510dp"
-        android:layout_height="432dp"
-        android:layout_marginEnd="740dp"
-        android:layout_marginBottom="233dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/title_underline" />
-
     <TextView
-        android:id="@+id/pictureHomeInputBack"
-        android:layout_width="1060dp"
-        android:layout_height="434dp"
-        android:layout_marginTop="157dp"
-        android:layout_marginEnd="3dp"
-        android:background="#63616161"
+        android:id="@+id/techspecsTitleText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="369dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="478dp"
+        android:layout_marginBottom="511dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Tech-Spec"
+        android:textAllCaps="true"
+        android:textColor="#66040404"
+        android:textSize="33sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -128,75 +153,6 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/techspecsTitleText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="369dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginEnd="478dp"
-        android:layout_marginBottom="511dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="Tech-Spec"
-        android:textAllCaps="true"
-        android:textColor="#66040404"
-        android:textSize="33sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/questionsUnclicked4"
-        android:layout_width="257dp"
-        android:layout_height="192dp"
-        android:layout_marginStart="107dp"
-        android:layout_marginEnd="660dp"
-        android:layout_marginBottom="440dp"
-        android:backgroundTint="#00FFFFFF"
-        android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/button_back_1"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <TextView
-        android:id="@+id/questionsTitleText4"
-        android:layout_width="184dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="146dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="694dp"
-        android:layout_marginBottom="510dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="questions"
-        android:textAllCaps="true"
-        android:textColor="#66000000"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/picturesClicked4"
-        android:layout_width="257dp"
-        android:layout_height="192dp"
-        android:layout_marginStart="766dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="440dp"
-        android:backgroundTint="#00FFFFFF"
-        android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/button_background_clicked"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <TextView
         android:id="@+id/picturesTitleText4"
         android:layout_width="wrap_content"
         android:layout_height="42dp"
@@ -215,15 +171,52 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
+        android:id="@+id/pictureScreenTitleUnderline"
+        android:layout_width="510dp"
+        android:layout_height="432dp"
+        android:layout_marginEnd="740dp"
+        android:layout_marginBottom="233dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/title_underline" />
+
+    <TextView
+        android:id="@+id/pictureScreenTitle"
+        android:layout_width="341dp"
+        android:layout_height="56dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="pit photos"
+        android:textAllCaps="true"
+        android:textColor="#FFF1AB"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.194" />
+
+    <TextView
+        android:id="@+id/pictureHomeInputBack"
+        android:layout_width="1060dp"
+        android:layout_height="434dp"
+        android:layout_marginTop="157dp"
+        android:layout_marginEnd="3dp"
+        android:background="#63616161"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
         android:id="@+id/frontPic"
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:layout_marginStart="71dp"
-        android:layout_marginTop="166dp"
-        android:layout_marginEnd="742dp"
-        android:layout_marginBottom="162dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/divider_horizontal_bright" />
@@ -232,38 +225,35 @@
         android:id="@+id/captureFrontBtn"
         android:layout_width="252dp"
         android:layout_height="54dp"
-        android:layout_marginStart="69dp"
-        android:layout_marginTop="423dp"
-        android:layout_marginEnd="742dp"
-        android:layout_marginBottom="101dp"
+        android:backgroundTint="#E2B9A9"
+        android:fontFamily="sans-serif-medium"
         android:text="take a picture"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.794" />
 
     <Button
         android:id="@+id/saveFrontPicBtn"
         android:layout_width="252dp"
         android:layout_height="54dp"
-        android:layout_marginStart="69dp"
-        android:layout_marginTop="489dp"
-        android:layout_marginEnd="742dp"
-        android:layout_marginBottom="35dp"
+        android:backgroundTint="#E3CEA6"
+        android:fontFamily="sans-serif-medium"
         android:text="save"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textColor="#000000"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="500dp" />
 
     <ImageView
         android:id="@+id/backPic"
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:layout_marginStart="396dp"
-        android:layout_marginTop="166dp"
-        android:layout_marginEnd="417dp"
-        android:layout_marginBottom="162dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -274,43 +264,39 @@
         android:id="@+id/captureBackBtn"
         android:layout_width="252dp"
         android:layout_height="54dp"
-        android:layout_marginStart="396dp"
-        android:layout_marginTop="423dp"
-        android:layout_marginEnd="415dp"
-        android:layout_marginBottom="101dp"
+        android:backgroundTint="#E2B9A9"
+        android:fontFamily="sans-serif-medium"
         android:text="take a picture"
+        android:textColor="#000000"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/picturesBackground"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.794" />
 
     <Button
         android:id="@+id/saveBackPicBtn"
         android:layout_width="252dp"
         android:layout_height="54dp"
-        android:layout_marginStart="394dp"
-        android:layout_marginTop="489dp"
-        android:layout_marginEnd="417dp"
-        android:layout_marginBottom="35dp"
+        android:backgroundTint="#E3CEA6"
         android:text="save"
+        android:textColor="#000000"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.435"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.454" />
+        app:layout_constraintVertical_bias="0.915" />
 
     <ImageView
         android:id="@+id/sidePic"
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:layout_marginStart="737dp"
-        android:layout_marginTop="166dp"
-        android:layout_marginEnd="76dp"
-        android:layout_marginBottom="162dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.931"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/divider_horizontal_bright" />
@@ -319,32 +305,32 @@
         android:id="@+id/captureSideBtn"
         android:layout_width="252dp"
         android:layout_height="54dp"
-        android:layout_marginStart="737dp"
-        android:layout_marginTop="423dp"
-        android:layout_marginEnd="74dp"
-        android:layout_marginBottom="101dp"
+        android:backgroundTint="#E2B9A9"
+        android:fontFamily="sans-serif-medium"
         android:text="take a picture"
+        android:textColor="#000000"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.794" />
 
     <Button
         android:id="@+id/saveSidePicBtn"
         android:layout_width="252dp"
         android:layout_height="54dp"
-        android:layout_marginStart="737dp"
-        android:layout_marginTop="489dp"
-        android:layout_marginEnd="74dp"
-        android:layout_marginBottom="35dp"
+        android:backgroundTint="#E3CEA6"
         android:text="save"
+        android:textColor="#000000"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintHorizontal_bias="0.932"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.915" />
 
 
 </android.support.constraint.ConstraintLayout>

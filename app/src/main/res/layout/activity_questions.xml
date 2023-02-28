@@ -23,14 +23,12 @@
         android:id="@+id/questionsHome"
         android:layout_width="91dp"
         android:layout_height="90dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="6dp"
-        android:layout_marginEnd="917dp"
-        android:layout_marginBottom="504dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.017"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998"
         app:srcCompat="@drawable/home_button" />
 
     <ImageButton
@@ -181,17 +179,15 @@
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/teamNumberTitle"
         android:layout_width="302dp"
         android:layout_height="61dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="128dp"
-        android:layout_marginEnd="688dp"
-        android:layout_marginBottom="411dp"
         android:fontFamily="sans-serif-medium"
         android:text="Team#: _______"
         android:textAllCaps="true"
@@ -199,34 +195,30 @@
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.237" />
 
     <EditText
         android:id="@+id/teamNumInput"
         android:layout_width="153dp"
         android:layout_height="67dp"
-        android:layout_marginStart="194dp"
-        android:layout_marginTop="119dp"
-        android:layout_marginEnd="677dp"
-        android:layout_marginBottom="414dp"
         android:ems="10"
         android:hint="####"
         android:inputType="number"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.226"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.223" />
 
     <TextView
         android:id="@+id/drivetrainTitle"
         android:layout_width="607dp"
         android:layout_height="58dp"
-        android:layout_marginStart="401dp"
-        android:layout_marginTop="128dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="414dp"
         android:fontFamily="sans-serif-medium"
         android:text="Drive train type: ____________"
         android:textAllCaps="true"
@@ -234,8 +226,10 @@
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.961"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.236" />
 
     <Spinner
         android:id="@+id/drivetrain"
@@ -255,10 +249,6 @@
         android:id="@+id/gamePieceAcquisitionTitle"
         android:layout_width="481dp"
         android:layout_height="56dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="225dp"
-        android:layout_marginEnd="509dp"
-        android:layout_marginBottom="319dp"
         android:fontFamily="sans-serif-medium"
         android:text="game piece acquisition-"
         android:textAllCaps="true"
@@ -266,17 +256,15 @@
         android:textSize="38sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.404" />
 
     <TextView
         android:id="@+id/acquisitionConesTitle"
         android:layout_width="127dp"
         android:layout_height="47dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="513dp"
-        android:layout_marginEnd="863dp"
-        android:layout_marginBottom="40dp"
         android:fontFamily="sans-serif-medium"
         android:text="cones"
         android:textAllCaps="true"
@@ -284,35 +272,31 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.036"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.927" />
 
     <TextView
         android:id="@+id/acquisitionCubesTitle"
         android:layout_width="127dp"
         android:layout_height="47dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="403dp"
-        android:layout_marginEnd="863dp"
-        android:layout_marginBottom="150dp"
         android:fontFamily="sans-serif-medium"
         android:text="cubes"
         android:textAllCaps="true"
         android:textColor="#E3CEA6"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/questionsBackground"
+        app:layout_constraintHorizontal_bias="0.037"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.73" />
 
     <TextView
         android:id="@+id/acquisitionFloorTitle"
         android:layout_width="127dp"
         android:layout_height="47dp"
-        android:layout_marginStart="172dp"
-        android:layout_marginTop="315dp"
-        android:layout_marginEnd="725dp"
-        android:layout_marginBottom="238dp"
         android:fontFamily="sans-serif-medium"
         android:text="Floor"
         android:textAllCaps="true"
@@ -320,17 +304,15 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.562" />
 
     <TextView
         android:id="@+id/acquisitionHPTitle"
         android:layout_width="155dp"
         android:layout_height="84dp"
-        android:layout_marginStart="316dp"
-        android:layout_marginTop="291dp"
-        android:layout_marginEnd="553dp"
-        android:layout_marginBottom="225dp"
         android:fontFamily="sans-serif-medium"
         android:text="human player"
         android:textAlignment="center"
@@ -339,85 +321,75 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.379"
+        app:layout_constraintStart_toStartOf="@+id/questionsBackground"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.565" />
 
     <CheckBox
         android:id="@+id/floorCubes"
         style="@style/CheckBoxColor"
         android:layout_width="64dp"
         android:layout_height="63dp"
-        android:layout_marginStart="212dp"
-        android:layout_marginTop="396dp"
-        android:layout_marginEnd="748dp"
-        android:layout_marginBottom="141dp"
         android:scaleX="1.7"
         android:scaleY="1.7"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.733" />
 
     <CheckBox
         android:id="@+id/floorCones"
         style="@style/CheckBoxColor"
         android:layout_width="64dp"
         android:layout_height="63dp"
-        android:layout_marginStart="212dp"
-        android:layout_marginTop="505dp"
-        android:layout_marginEnd="748dp"
-        android:layout_marginBottom="32dp"
         android:scaleX="1.7"
         android:scaleY="1.7"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94" />
 
     <CheckBox
         android:id="@+id/HPCubes"
         style="@style/CheckBoxColor"
         android:layout_width="64dp"
         android:layout_height="63dp"
-        android:layout_marginStart="373dp"
-        android:layout_marginTop="396dp"
-        android:layout_marginEnd="587dp"
-        android:layout_marginBottom="141dp"
         android:scaleX="1.7"
         android:scaleY="1.7"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.733" />
 
     <CheckBox
         android:id="@+id/HPCones"
         style="@style/CheckBoxColor"
         android:layout_width="64dp"
         android:layout_height="63dp"
-        android:layout_marginStart="373dp"
-        android:layout_marginTop="505dp"
-        android:layout_marginEnd="587dp"
-        android:layout_marginBottom="32dp"
         android:scaleX="1.7"
         android:scaleY="1.7"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94" />
 
     <TextView
         android:id="@+id/conePickupTitle"
         android:layout_width="346dp"
         android:layout_height="51dp"
-        android:layout_marginStart="608dp"
-        android:layout_marginTop="225dp"
-        android:layout_marginEnd="70dp"
-        android:layout_marginBottom="324dp"
         android:fontFamily="sans-serif-medium"
         android:text="cone pickup-"
         android:textAlignment="textStart"
@@ -426,18 +398,16 @@
         android:textSize="38sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.899"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
 
     <CheckBox
         android:id="@+id/conePickupNone"
         style="@style/CheckBoxColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="610dp"
-        android:layout_marginTop="291dp"
-        android:layout_marginEnd="292dp"
-        android:layout_marginBottom="261dp"
         android:fontFamily="sans-serif-medium"
         android:text="none"
         android:textAllCaps="true"
@@ -445,8 +415,10 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.676"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.527"
         tools:ignore="TouchTargetSizeCheck" />
 
     <CheckBox
@@ -454,10 +426,6 @@
         style="@style/CheckBoxColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="610dp"
-        android:layout_marginTop="347dp"
-        android:layout_marginEnd="128dp"
-        android:layout_marginBottom="205dp"
         android:fontFamily="sans-serif-medium"
         android:text="human player"
         android:textAllCaps="true"
@@ -465,8 +433,10 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.826"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.628"
         tools:ignore="TouchTargetSizeCheck" />
 
     <CheckBox
@@ -474,19 +444,17 @@
         style="@style/CheckBoxColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="610dp"
-        android:layout_marginTop="403dp"
-        android:layout_marginEnd="151dp"
-        android:layout_marginBottom="149dp"
         android:fontFamily="sans-serif-medium"
         android:text="right side up"
         android:textAllCaps="true"
         android:textColor="#E2B9A9"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/questionsBackground"
+        app:layout_constraintHorizontal_bias="0.799"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.729"
         tools:ignore="TouchTargetSizeCheck" />
 
     <CheckBox
@@ -494,19 +462,17 @@
         style="@style/CheckBoxColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="610dp"
-        android:layout_marginTop="458dp"
-        android:layout_marginEnd="123dp"
-        android:layout_marginBottom="94dp"
         android:fontFamily="sans-serif-medium"
         android:text="knocked down"
         android:textAllCaps="true"
         android:textColor="#DBA892"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/questionsBackground"
+        app:layout_constraintHorizontal_bias="0.829"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.828"
         tools:ignore="TouchTargetSizeCheck" />
 
     <CheckBox
@@ -514,10 +480,6 @@
         style="@style/CheckBoxColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="610dp"
-        android:layout_marginTop="513dp"
-        android:layout_marginEnd="70dp"
-        android:layout_marginBottom="39dp"
         android:fontFamily="sans-serif-medium"
         android:text="any orientattion"
         android:textAllCaps="true"
@@ -525,8 +487,10 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.897"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.925"
         tools:ignore="TouchTargetSizeCheck" />
 
 </android.support.constraint.ConstraintLayout>

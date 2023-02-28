@@ -1,9 +1,12 @@
 package com.example.pitscouting2023_legacysupport;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -11,6 +14,7 @@ import android.widget.TextView;
 public class Questions extends AppCompatActivity {
 
     EditText teamNumberInput;
+    ImageButton questionsBtn1, techspecsBtn1, commentsBtn1, picturesBtn1;
     TextView inputBack1, teamNumTitleTxt, drivetrainTitleTxt, gamePieceAcquisitionTitleTxt, acquisitionConesTitleTxt, acquisitionCubesTitleTxt, acquisitionFloorTitleTxt, acquisitionHPTitleTxt, conePickupTitleTxt;
     ImageView background1, home1;
     CheckBox floorCubesCheck, floorConesCheck, HPCubesCheck, HPConesCheck, conePickupNoneCheck, conePickupHPCheck, conePickupUpCheck, conePickupDownCheck, conePickupAnyCheck;
@@ -27,6 +31,11 @@ public class Questions extends AppCompatActivity {
         }
 
         teamNumberInput = findViewById(R.id.teamNumInput);
+
+        questionsBtn1 = findViewById(R.id.questionsClicked);
+        techspecsBtn1 = findViewById(R.id.techspecsUnclicked);
+        commentsBtn1 = findViewById(R.id.commentsUnclicked);
+        picturesBtn1 = findViewById(R.id.picturesUnclicked);
 
         inputBack1 = findViewById(R.id.questionsInputBack);
         teamNumTitleTxt = findViewById(R.id.teamNumberTitle);
@@ -52,6 +61,38 @@ public class Questions extends AppCompatActivity {
         conePickupAnyCheck = findViewById(R.id.conePickupAny);
 
         drivetrainSpinner = findViewById(R.id.drivetrain);
+
+        questionsBtn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent  = new Intent(Questions.this, Questions.class);
+                startActivity(intent);
+            }
+        });
+
+        techspecsBtn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent  = new Intent(Questions.this, TechSpecs.class);
+                startActivity(intent);
+            }
+        });
+
+        commentsBtn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent  = new Intent(Questions.this, Comments.class);
+                startActivity(intent);
+            }
+        });
+
+        picturesBtn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent  = new Intent(Questions.this, PictureScreen.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }
