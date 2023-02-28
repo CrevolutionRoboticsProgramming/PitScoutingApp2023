@@ -15,7 +15,7 @@ public class Questions extends AppCompatActivity {
 
     EditText teamNumberInput;
     ImageButton questionsBtn1, techspecsBtn1, commentsBtn1, picturesBtn1;
-    TextView inputBack1, teamNumTitleTxt, drivetrainTitleTxt, gamePieceAcquisitionTitleTxt, acquisitionConesTitleTxt, acquisitionCubesTitleTxt, acquisitionFloorTitleTxt, acquisitionHPTitleTxt, conePickupTitleTxt;
+    TextView questionsTitleTxt1, techspecsTitleTxt1, commentstitleTxt1, picturesTitleTxt1, inputBack1, teamNumTitleTxt, drivetrainTitleTxt, gamePieceAcquisitionTitleTxt, acquisitionConesTitleTxt, acquisitionCubesTitleTxt, acquisitionFloorTitleTxt, acquisitionHPTitleTxt, conePickupTitleTxt;
     ImageView background1, home1;
     CheckBox floorCubesCheck, floorConesCheck, HPCubesCheck, HPConesCheck, conePickupNoneCheck, conePickupHPCheck, conePickupUpCheck, conePickupDownCheck, conePickupAnyCheck;
     Spinner drivetrainSpinner;
@@ -37,6 +37,10 @@ public class Questions extends AppCompatActivity {
         commentsBtn1 = findViewById(R.id.commentsUnclicked);
         picturesBtn1 = findViewById(R.id.picturesUnclicked);
 
+        questionsTitleTxt1 = findViewById(R.id.questionsTitleText);
+        techspecsTitleTxt1 = findViewById(R.id.techspecsTitleText);
+        commentstitleTxt1 = findViewById(R.id.commentsTitleText);
+        picturesTitleTxt1 = findViewById(R.id.picturesTitleText);
         inputBack1 = findViewById(R.id.questionsInputBack);
         teamNumTitleTxt = findViewById(R.id.teamNumberTitle);
         drivetrainTitleTxt = findViewById(R.id.drivetrainTitle);
@@ -62,13 +66,6 @@ public class Questions extends AppCompatActivity {
 
         drivetrainSpinner = findViewById(R.id.drivetrain);
 
-        questionsBtn1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent  = new Intent(Questions.this, Questions.class);
-                startActivity(intent);
-            }
-        });
 
         techspecsBtn1.setOnClickListener(new View.OnClickListener() {
             @Override

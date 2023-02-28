@@ -2,14 +2,15 @@ package com.example.pitscouting2023_legacysupport;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.media.Image;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -17,8 +18,12 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 public class PictureScreen extends AppCompatActivity {
+
+    ImageButton questionsBtn4, techspecsBtn4, commentsBtn4, picturesBtn4;
     Button frontCaptureBtn, backCaptureBtn, sideCaptureBtn, frontSaveBtn, backSaveBtn, sideSaveBtn;
-    ImageView frontImageView, backImageView, sideImageView;
+    TextView questionsTitleTxt4, techspecsTitleTxt4, commentstitleTxt4, picturesTitleTxt4, inputBack4;
+    ImageView background4, home4, frontImageView, backImageView, sideImageView;
+
     private static final int front_pic_id = 100;
     private static final int back_pic_id = 101;
     private static final int side_pic_id = 102;
@@ -34,6 +39,11 @@ public class PictureScreen extends AppCompatActivity {
             getSupportActionBar().hide();
         }
 
+        questionsBtn4 = findViewById(R.id.questionsUnclicked4);
+        techspecsBtn4 = findViewById(R.id.techspecsUnclicked4);
+        commentsBtn4 = findViewById(R.id.commentsUnclicked4);
+        picturesBtn4 = findViewById(R.id.picturesClicked4);
+
         frontCaptureBtn = findViewById(R.id.captureFrontBtn);
         backCaptureBtn = findViewById(R.id.captureBackBtn);
         sideCaptureBtn = findViewById(R.id.captureSideBtn);
@@ -41,9 +51,43 @@ public class PictureScreen extends AppCompatActivity {
         backSaveBtn = findViewById(R.id.saveBackPicBtn);
         sideSaveBtn = findViewById(R.id.saveSidePicBtn);
 
+        questionsTitleTxt4 = findViewById(R.id.questionsTitleText4);
+        techspecsTitleTxt4 = findViewById(R.id.techspecsTitleText4);
+        commentstitleTxt4 = findViewById(R.id.commentsTitleText4);
+        picturesTitleTxt4 = findViewById(R.id.picturesTitleText4);
+        inputBack4 = findViewById(R.id.picturesInputBack);
+
+        background4 = findViewById(R.id.picturesBackground);
+        home4 = findViewById(R.id.picturesHome);
         frontImageView = findViewById(R.id.frontPic);
         backImageView = findViewById(R.id.backPic);
         sideImageView = findViewById(R.id.sidePic);
+
+
+        questionsBtn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent  = new Intent(PictureScreen.this, Questions.class);
+                startActivity(intent);
+            }
+        });
+
+        techspecsBtn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent  = new Intent(PictureScreen.this, TechSpecs.class);
+                startActivity(intent);
+            }
+        });
+
+        commentsBtn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent  = new Intent(PictureScreen.this, Comments.class);
+                startActivity(intent);
+            }
+        });
+
 
         frontCaptureBtn.setOnClickListener(new View.OnClickListener() {
             @Override
