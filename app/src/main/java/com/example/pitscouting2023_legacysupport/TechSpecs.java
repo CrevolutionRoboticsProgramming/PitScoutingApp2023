@@ -1,6 +1,7 @@
 package com.example.pitscouting2023_legacysupport;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,6 +15,7 @@ public class TechSpecs extends AppCompatActivity {
     ImageButton questionsBtn2, techspecsBtn2, commentsBtn2, picturesBtn2;
     TextView questionsTitleTxt2, techspecsTitleTxt2, commentstitleTxt2, picturesTitleTxt2, inputBack2;
     ImageView background2, home2;
+    SharedPreferences sp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +41,20 @@ public class TechSpecs extends AppCompatActivity {
         background2 = findViewById(R.id.techspecsBackground);
         home2 = findViewById(R.id.techspecsHome);
 
+
+        //getting shared preferences
+        sp = getSharedPreferences("TeamData", MODE_PRIVATE);
+
+        //when the screen is changed to the auton screen if there was any text or checks already inputed then they will replace the otherwise blank inputs
+        SharedPreferences new_sp = getApplicationContext().getSharedPreferences("TeamData", MODE_PRIVATE);
+
+        home2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(TechSpecs.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         questionsBtn2.setOnClickListener(new View.OnClickListener() {
             @Override

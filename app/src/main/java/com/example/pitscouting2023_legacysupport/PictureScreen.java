@@ -1,6 +1,7 @@
 package com.example.pitscouting2023_legacysupport;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.os.Environment;
 import android.provider.MediaStore;
@@ -23,6 +24,7 @@ public class PictureScreen extends AppCompatActivity {
     Button frontCaptureBtn, backCaptureBtn, sideCaptureBtn, frontSaveBtn, backSaveBtn, sideSaveBtn;
     TextView questionsTitleTxt4, techspecsTitleTxt4, commentstitleTxt4, picturesTitleTxt4, inputBack4;
     ImageView background4, home4, frontImageView, backImageView, sideImageView;
+    SharedPreferences sp;
 
     private static final int front_pic_id = 100;
     private static final int back_pic_id = 101;
@@ -63,6 +65,21 @@ public class PictureScreen extends AppCompatActivity {
         backImageView = findViewById(R.id.backPic);
         sideImageView = findViewById(R.id.sidePic);
 
+
+        //getting shared preferences
+        sp = getSharedPreferences("TeamData", MODE_PRIVATE);
+
+        //when the screen is changed to the auton screen if there was any text or checks already inputed then they will replace the otherwise blank inputs
+        SharedPreferences new_sp = getApplicationContext().getSharedPreferences("TeamData", MODE_PRIVATE);
+
+
+        home4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PictureScreen.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         questionsBtn4.setOnClickListener(new View.OnClickListener() {
             @Override

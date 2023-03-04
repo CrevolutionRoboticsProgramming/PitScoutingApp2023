@@ -1,6 +1,7 @@
 package com.example.pitscouting2023_legacysupport;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,6 +16,7 @@ public class Comments extends AppCompatActivity {
     ImageButton questionsBtn3, techspecsBtn3, commentsBtn3, picturesBtn3;
     TextView questionsTitleTxt3, techspecsTitleTxt3, commentstitleTxt3, picturesTitleTxt3, inputBack3, pieceScoringAbilitytitleTxt, conesScoringTitleTxt, cubesScoringtitleTxt, floorScoringtitleTxt, middleScoringTitleTxt, highScoringtitleTxt, commentsInputTitleTxt;
     ImageView background3, home3;
+    SharedPreferences sp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +51,20 @@ public class Comments extends AppCompatActivity {
         background3 = findViewById(R.id.commentsBackground);
         home3 = findViewById(R.id.commentsHome);
 
+
+        //getting shared preferences
+        sp = getSharedPreferences("TeamData", MODE_PRIVATE);
+
+        //when the screen is changed to the auton screen if there was any text or checks already inputed then they will replace the otherwise blank inputs
+        SharedPreferences new_sp = getApplicationContext().getSharedPreferences("TeamData", MODE_PRIVATE);
+
+        home3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Comments.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         questionsBtn3.setOnClickListener(new View.OnClickListener() {
             @Override
