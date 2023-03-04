@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -144,6 +145,8 @@ public class PictureScreen extends AppCompatActivity {
                     e.printStackTrace();
                 }
 
+                Toast.makeText(getApplicationContext(),"Front Picture Saved Successfully", Toast.LENGTH_SHORT).show();
+
             }
         });
 
@@ -160,6 +163,8 @@ public class PictureScreen extends AppCompatActivity {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
+
+                Toast.makeText(getApplicationContext(),"Back Picture Saved Successfully", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -176,6 +181,8 @@ public class PictureScreen extends AppCompatActivity {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
+
+                Toast.makeText(getApplicationContext(),"Side Picture Saved Successfully", Toast.LENGTH_SHORT).show();
             }
         });
 

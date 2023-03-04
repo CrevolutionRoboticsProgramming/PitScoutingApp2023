@@ -19,17 +19,6 @@
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/black_back" />
 
-    <TextView
-        android:id="@+id/techspecsInputBack"
-        android:layout_width="1066dp"
-        android:layout_height="492dp"
-        android:layout_marginTop="109dp"
-        android:background="#63616161"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageView
         android:id="@+id/techspecsHome"
         android:layout_width="91dp"
@@ -181,5 +170,247 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/techspecsInputBack"
+        android:layout_width="1066dp"
+        android:layout_height="492dp"
+        android:layout_marginTop="109dp"
+        android:background="#63616161"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/autonPathsInput"
+        android:layout_width="153dp"
+        android:layout_height="67dp"
+        android:ems="10"
+        android:hint="#"
+        android:inputType="number"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/techspecsBackground"
+        app:layout_constraintHorizontal_bias="0.963"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.243" />
+
+    <TextView
+        android:id="@+id/numberOfAutonPathsTitleText"
+        android:layout_width="572dp"
+        android:layout_height="64dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="# of auton paths: _______"
+        android:textAllCaps="true"
+        android:textColor="#C3A341"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.253" />
+
+    <TextView
+        android:id="@+id/weightTitleText"
+        android:layout_width="302dp"
+        android:layout_height="61dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="weight: _______"
+        android:textAllCaps="true"
+        android:textColor="#C3A341"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.252" />
+
+    <EditText
+        android:id="@+id/robotWeightInput"
+        android:layout_width="153dp"
+        android:layout_height="67dp"
+        android:ems="10"
+        android:hint="lbs"
+        android:inputType="number"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/techspecsBackground"
+        app:layout_constraintHorizontal_bias="0.241"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.243" />
+
+    <TextView
+        android:id="@+id/dockingTitleText"
+        android:layout_width="205dp"
+        android:layout_height="50dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="docking-"
+        android:textAlignment="textStart"
+        android:textAllCaps="true"
+        android:textColor="#C3A341"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42" />
+
+    <CheckBox
+        android:id="@+id/ableToDock"
+        style="@style/CheckBoxColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="able to dock"
+        android:textAllCaps="true"
+        android:textColor="#E8D175"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.543"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/ableToEngage"
+        style="@style/CheckBoxColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="able to engage"
+        android:textAllCaps="true"
+        android:textColor="#E3CEA6"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.664"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/ableToBuddyClimb"
+        style="@style/CheckBoxColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="buddy climb"
+        android:textAllCaps="true"
+        android:textColor="#E2B9A9"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/techspecsBackground"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.788"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/secondGear"
+        style="@style/CheckBoxColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Has 2nd Gear?"
+        android:textAllCaps="true"
+        android:textColor="#C3A341"
+        android:textSize="38dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.421"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/gearSpeedTitleText"
+        android:layout_width="302dp"
+        android:layout_height="61dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="gear Speed-"
+        android:textAllCaps="true"
+        android:textColor="#C3A341"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.626"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.601" />
+
+    <TextView
+        android:id="@+id/topSpeedTitleText"
+        android:layout_width="484dp"
+        android:layout_height="61dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="top speed: _______"
+        android:textAllCaps="true"
+        android:textColor="#E8D175"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.837"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.738" />
+
+    <EditText
+        android:id="@+id/gearTopSpeedInput"
+        android:layout_width="153dp"
+        android:layout_height="67dp"
+        android:ems="10"
+        android:hint="ft/s"
+        android:inputType="number"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/techspecsBackground"
+        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.722" />
+
+    <TextView
+        android:id="@+id/topSpeedSecondGearTitleText"
+        android:layout_width="530dp"
+        android:layout_height="54dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="2nd gear top speed: _______"
+        android:textAllCaps="true"
+        android:textColor="#E3CEA6"
+        android:textSize="36sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.869" />
+
+    <EditText
+        android:id="@+id/secondGearTopSpeedInput"
+        android:layout_width="153dp"
+        android:layout_height="67dp"
+        android:ems="10"
+        android:hint="ft/s"
+        android:inputType="number"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/techspecsBackground"
+        app:layout_constraintHorizontal_bias="0.964"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.861" />
 
 </android.support.constraint.ConstraintLayout>
