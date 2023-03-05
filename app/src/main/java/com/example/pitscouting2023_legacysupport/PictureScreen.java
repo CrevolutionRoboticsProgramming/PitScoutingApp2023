@@ -65,6 +65,9 @@ public class PictureScreen extends AppCompatActivity {
         backImageView = findViewById(R.id.backPic);
         sideImageView = findViewById(R.id.sidePic);
 
+        frontImageView.setImageResource(R.drawable.nadefaultwhite);
+        backImageView.setImageResource(R.drawable.nadefaultwhite);
+        sideImageView.setImageResource(R.drawable.nadefaultwhite);
 
         //getting shared preferences
         sp = getSharedPreferences("TeamData", MODE_PRIVATE);
