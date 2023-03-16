@@ -19,8 +19,8 @@ public class Comments extends AppCompatActivity {
     ImageView background3, home3;
     CheckBox  cubesFloorCheck, cubesMiddleCheck, cubesHighCheck, conesFloorCheck, conesMiddleCheck, conesHighCheck;
     SharedPreferences sp;
-    String Comments;
-    Boolean CubesFloorBoolean, CubesMiddleBoolean, CubesHighBoolean, ConesFloorBoolean, ConesMiddleBoolean, ConesHighBoolean;
+    String commentsString;
+    Boolean cubesFloorBoolean, cubesMiddleBoolean, cubesHighBoolean, conesFloorBoolean, conesMiddleBoolean, conesHighBoolean;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,54 +83,54 @@ public class Comments extends AppCompatActivity {
                 //when the screen is changed all inputs will be saved with shared preferences
 
                 //making the inputs into a string for the sp
-                Comments = commentsInput.getText().toString();
+                commentsString = commentsInput.getText().toString();
                 //check box inputs turned into a boolean
                 if (cubesFloorCheck.isChecked()){
-                    CubesFloorBoolean = true;
+                    cubesFloorBoolean = true;
                 } else {
-                    CubesFloorBoolean = false;
+                    cubesFloorBoolean = false;
                 }
 
                 if (cubesMiddleCheck.isChecked()){
-                    CubesMiddleBoolean = true;
+                    cubesMiddleBoolean = true;
                 } else {
-                    CubesMiddleBoolean = false;
+                    cubesMiddleBoolean = false;
                 }
 
                 if (cubesHighCheck.isChecked()){
-                    CubesHighBoolean = true;
+                    cubesHighBoolean = true;
                 } else {
-                    CubesHighBoolean = false;
+                    cubesHighBoolean = false;
                 }
 
                 if (conesFloorCheck.isChecked()){
-                    ConesFloorBoolean = true;
+                    conesFloorBoolean = true;
                 } else {
-                    ConesFloorBoolean = false;
+                    conesFloorBoolean = false;
                 }
 
                 if (conesMiddleCheck.isChecked()){
-                    ConesMiddleBoolean = true;
+                    conesMiddleBoolean = true;
                 } else {
-                    ConesMiddleBoolean = false;
+                    conesMiddleBoolean = false;
                 }
 
                 if (conesHighCheck.isChecked()){
-                    ConesHighBoolean = true;
+                    conesHighBoolean = true;
                 } else {
-                    ConesHighBoolean = false;
+                    conesHighBoolean = false;
                 }
 
                 //creating a editor for the sp and naming it editor
                 SharedPreferences.Editor editor = sp.edit();
                 //using the editor to store the strings and booleans in the sp (green) that can be called from other screens as well
-                editor.putString("Comments", Comments);
-                editor.putBoolean("CubesFloorCheck", CubesFloorBoolean);
-                editor.putBoolean("CubesMiddleCheck", CubesMiddleBoolean);
-                editor.putBoolean("CubesHighCheck", CubesHighBoolean);
-                editor.putBoolean("ConesFloorCheck", ConesFloorBoolean);
-                editor.putBoolean("ConesMiddleCheck", ConesMiddleBoolean);
-                editor.putBoolean("ConesHighCheck", ConesHighBoolean);
+                editor.putString("Comments", commentsString);
+                editor.putBoolean("CubesFloorCheck", cubesFloorBoolean);
+                editor.putBoolean("CubesMiddleCheck", cubesMiddleBoolean);
+                editor.putBoolean("CubesHighCheck", cubesHighBoolean);
+                editor.putBoolean("ConesFloorCheck", conesFloorBoolean);
+                editor.putBoolean("ConesMiddleCheck", conesMiddleBoolean);
+                editor.putBoolean("ConesHighCheck", conesHighBoolean);
                 //updates all the sp
                 editor.commit();
 
@@ -145,54 +145,54 @@ public class Comments extends AppCompatActivity {
                 //when the screen is changed all inputs will be saved with shared preferences
 
                 //making the inputs into a string for the sp
-                Comments = commentsInput.getText().toString();
+                commentsString = commentsInput.getText().toString();
                 //check box inputs turned into a boolean
                 if (cubesFloorCheck.isChecked()){
-                    CubesFloorBoolean = true;
+                    cubesFloorBoolean = true;
                 } else {
-                    CubesFloorBoolean = false;
+                    cubesFloorBoolean = false;
                 }
 
                 if (cubesMiddleCheck.isChecked()){
-                    CubesMiddleBoolean = true;
+                    cubesMiddleBoolean = true;
                 } else {
-                    CubesMiddleBoolean = false;
+                    cubesMiddleBoolean = false;
                 }
 
                 if (cubesHighCheck.isChecked()){
-                    CubesHighBoolean = true;
+                    cubesHighBoolean = true;
                 } else {
-                    CubesHighBoolean = false;
+                    cubesHighBoolean = false;
                 }
 
                 if (conesFloorCheck.isChecked()){
-                    ConesFloorBoolean = true;
+                    conesFloorBoolean = true;
                 } else {
-                    ConesFloorBoolean = false;
+                    conesFloorBoolean = false;
                 }
 
                 if (conesMiddleCheck.isChecked()){
-                    ConesMiddleBoolean = true;
+                    conesMiddleBoolean = true;
                 } else {
-                    ConesMiddleBoolean = false;
+                    conesMiddleBoolean = false;
                 }
 
                 if (conesHighCheck.isChecked()){
-                    ConesHighBoolean = true;
+                    conesHighBoolean = true;
                 } else {
-                    ConesHighBoolean = false;
+                    conesHighBoolean = false;
                 }
 
                 //creating a editor for the sp and naming it editor
                 SharedPreferences.Editor editor = sp.edit();
                 //using the editor to store the strings and booleans in the sp (green) that can be called from other screens as well
-                editor.putString("Comments", Comments);
-                editor.putBoolean("CubesFloorCheck", CubesFloorBoolean);
-                editor.putBoolean("CubesMiddleCheck", CubesMiddleBoolean);
-                editor.putBoolean("CubesHighCheck", CubesHighBoolean);
-                editor.putBoolean("ConesFloorCheck", ConesFloorBoolean);
-                editor.putBoolean("ConesMiddleCheck", ConesMiddleBoolean);
-                editor.putBoolean("ConesHighCheck", ConesHighBoolean);
+                editor.putString("Comments", commentsString);
+                editor.putBoolean("CubesFloorCheck", cubesFloorBoolean);
+                editor.putBoolean("CubesMiddleCheck", cubesMiddleBoolean);
+                editor.putBoolean("CubesHighCheck", cubesHighBoolean);
+                editor.putBoolean("ConesFloorCheck", conesFloorBoolean);
+                editor.putBoolean("ConesMiddleCheck", conesMiddleBoolean);
+                editor.putBoolean("ConesHighCheck", conesHighBoolean);
                 //updates all the sp
                 editor.commit();
 
@@ -207,54 +207,54 @@ public class Comments extends AppCompatActivity {
                 //when the screen is changed all inputs will be saved with shared preferences
 
                 //making the inputs into a string for the sp
-                Comments = commentsInput.getText().toString();
+                commentsString = commentsInput.getText().toString();
                 //check box inputs turned into a boolean
                 if (cubesFloorCheck.isChecked()){
-                    CubesFloorBoolean = true;
+                    cubesFloorBoolean = true;
                 } else {
-                    CubesFloorBoolean = false;
+                    cubesFloorBoolean = false;
                 }
 
                 if (cubesMiddleCheck.isChecked()){
-                    CubesMiddleBoolean = true;
+                    cubesMiddleBoolean = true;
                 } else {
-                    CubesMiddleBoolean = false;
+                    cubesMiddleBoolean = false;
                 }
 
                 if (cubesHighCheck.isChecked()){
-                    CubesHighBoolean = true;
+                    cubesHighBoolean = true;
                 } else {
-                    CubesHighBoolean = false;
+                    cubesHighBoolean = false;
                 }
 
                 if (conesFloorCheck.isChecked()){
-                    ConesFloorBoolean = true;
+                    conesFloorBoolean = true;
                 } else {
-                    ConesFloorBoolean = false;
+                    conesFloorBoolean = false;
                 }
 
                 if (conesMiddleCheck.isChecked()){
-                    ConesMiddleBoolean = true;
+                    conesMiddleBoolean = true;
                 } else {
-                    ConesMiddleBoolean = false;
+                    conesMiddleBoolean = false;
                 }
 
                 if (conesHighCheck.isChecked()){
-                    ConesHighBoolean = true;
+                    conesHighBoolean = true;
                 } else {
-                    ConesHighBoolean = false;
+                    conesHighBoolean = false;
                 }
 
                 //creating a editor for the sp and naming it editor
                 SharedPreferences.Editor editor = sp.edit();
                 //using the editor to store the strings and booleans in the sp (green) that can be called from other screens as well
-                editor.putString("Comments", Comments);
-                editor.putBoolean("CubesFloorCheck", CubesFloorBoolean);
-                editor.putBoolean("CubesMiddleCheck", CubesMiddleBoolean);
-                editor.putBoolean("CubesHighCheck", CubesHighBoolean);
-                editor.putBoolean("ConesFloorCheck", ConesFloorBoolean);
-                editor.putBoolean("ConesMiddleCheck", ConesMiddleBoolean);
-                editor.putBoolean("ConesHighCheck", ConesHighBoolean);
+                editor.putString("Comments", commentsString);
+                editor.putBoolean("CubesFloorCheck", cubesFloorBoolean);
+                editor.putBoolean("CubesMiddleCheck", cubesMiddleBoolean);
+                editor.putBoolean("CubesHighCheck", cubesHighBoolean);
+                editor.putBoolean("ConesFloorCheck", conesFloorBoolean);
+                editor.putBoolean("ConesMiddleCheck", conesMiddleBoolean);
+                editor.putBoolean("ConesHighCheck", conesHighBoolean);
                 //updates all the sp
                 editor.commit();
 
@@ -269,54 +269,54 @@ public class Comments extends AppCompatActivity {
                 //when the screen is changed all inputs will be saved with shared preferences
 
                 //making the inputs into a string for the sp
-                Comments = commentsInput.getText().toString();
+                commentsString = commentsInput.getText().toString();
                 //check box inputs turned into a boolean
                 if (cubesFloorCheck.isChecked()){
-                    CubesFloorBoolean = true;
+                    cubesFloorBoolean = true;
                 } else {
-                    CubesFloorBoolean = false;
+                    cubesFloorBoolean = false;
                 }
 
                 if (cubesMiddleCheck.isChecked()){
-                    CubesMiddleBoolean = true;
+                    cubesMiddleBoolean = true;
                 } else {
-                    CubesMiddleBoolean = false;
+                    cubesMiddleBoolean = false;
                 }
 
                 if (cubesHighCheck.isChecked()){
-                    CubesHighBoolean = true;
+                    cubesHighBoolean = true;
                 } else {
-                    CubesHighBoolean = false;
+                    cubesHighBoolean = false;
                 }
 
                 if (conesFloorCheck.isChecked()){
-                    ConesFloorBoolean = true;
+                    conesFloorBoolean = true;
                 } else {
-                    ConesFloorBoolean = false;
+                    conesFloorBoolean = false;
                 }
 
                 if (conesMiddleCheck.isChecked()){
-                    ConesMiddleBoolean = true;
+                    conesMiddleBoolean = true;
                 } else {
-                    ConesMiddleBoolean = false;
+                    conesMiddleBoolean = false;
                 }
 
                 if (conesHighCheck.isChecked()){
-                    ConesHighBoolean = true;
+                    conesHighBoolean = true;
                 } else {
-                    ConesHighBoolean = false;
+                    conesHighBoolean = false;
                 }
 
                 //creating a editor for the sp and naming it editor
                 SharedPreferences.Editor editor = sp.edit();
                 //using the editor to store the strings and booleans in the sp (green) that can be called from other screens as well
-                editor.putString("Comments", Comments);
-                editor.putBoolean("CubesFloorCheck", CubesFloorBoolean);
-                editor.putBoolean("CubesMiddleCheck", CubesMiddleBoolean);
-                editor.putBoolean("CubesHighCheck", CubesHighBoolean);
-                editor.putBoolean("ConesFloorCheck", ConesFloorBoolean);
-                editor.putBoolean("ConesMiddleCheck", ConesMiddleBoolean);
-                editor.putBoolean("ConesHighCheck", ConesHighBoolean);
+                editor.putString("Comments", commentsString);
+                editor.putBoolean("CubesFloorCheck", cubesFloorBoolean);
+                editor.putBoolean("CubesMiddleCheck", cubesMiddleBoolean);
+                editor.putBoolean("CubesHighCheck", cubesHighBoolean);
+                editor.putBoolean("ConesFloorCheck", conesFloorBoolean);
+                editor.putBoolean("ConesMiddleCheck", conesMiddleBoolean);
+                editor.putBoolean("ConesHighCheck", conesHighBoolean);
                 //updates all the sp
                 editor.commit();
 

@@ -16,13 +16,14 @@ import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.OutputStream;
 
 public class PictureScreen extends AppCompatActivity {
 
     ImageButton questionsBtn4, techspecsBtn4, commentsBtn4, picturesBtn4;
-    Button frontCaptureBtn, backCaptureBtn, sideCaptureBtn, frontSaveBtn, backSaveBtn, sideSaveBtn;
+    Button frontCaptureBtn, backCaptureBtn, sideCaptureBtn, frontSaveBtn, backSaveBtn, sideSaveBtn, generateQrBtn;
     TextView questionsTitleTxt4, techspecsTitleTxt4, commentstitleTxt4, picturesTitleTxt4, inputBack4;
     ImageView background4, home4, frontImageView, backImageView, sideImageView;
     SharedPreferences sp;
@@ -53,6 +54,7 @@ public class PictureScreen extends AppCompatActivity {
         frontSaveBtn = findViewById(R.id.saveFrontPicBtn);
         backSaveBtn = findViewById(R.id.saveBackPicBtn);
         sideSaveBtn = findViewById(R.id.saveSidePicBtn);
+        generateQrBtn = findViewById(R.id.generateQrCodeButton);
 
         questionsTitleTxt4 = findViewById(R.id.questionsTitleText4);
         techspecsTitleTxt4 = findViewById(R.id.techspecsTitleText4);
@@ -66,6 +68,9 @@ public class PictureScreen extends AppCompatActivity {
         backImageView = findViewById(R.id.backPic);
         sideImageView = findViewById(R.id.sidePic);
 
+
+        File scoutingDataTextFile = new File(Environment.getExternalStoragePublicDirectory(
+                Environment.DIRECTORY_DOCUMENTS), "2023PitScoutingData.txt");
 
         //getting shared preferences
         sp = getSharedPreferences("TeamData", MODE_PRIVATE);
@@ -135,7 +140,8 @@ public class PictureScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //need to change file name so it saves the team # and what robot view it is
-                String frontImageFileName = "teamnumber" + "FrontView";
+                String teamNumForTitle = new_sp.getString("TeamNumber", "");
+                String frontImageFileName = teamNumForTitle + "BackView";
                 File storageDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
                 File frontImageFile = new File(storageDir, frontImageFileName + ".jpg");
 
@@ -154,7 +160,8 @@ public class PictureScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //need to change file name so it saves the team # and what robot view it is
-                String backImageFileName = "teamnumber" + "BackView";
+                String teamNumForTitle = new_sp.getString("TeamNumber", "");
+                String backImageFileName = teamNumForTitle + "BackView";
                 File storageDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
                 File backImageFile = new File(storageDir, backImageFileName + ".jpg");
 
@@ -172,7 +179,8 @@ public class PictureScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //need to change file name so it saves the team # and what robot view it is
-                String sideImageFileName = "teamnumber" + "SideView";
+                String teamNumForTitle = new_sp.getString("TeamNumber", "");
+                String sideImageFileName = teamNumForTitle + "BackView";
                 File storageDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
                 File sideImageFile = new File(storageDir, sideImageFileName + ".jpg");
 
@@ -183,6 +191,143 @@ public class PictureScreen extends AppCompatActivity {
                 }
 
                 Toast.makeText(getApplicationContext(),"Side Picture Saved Successfully", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        generateQrBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SharedPreferences new_SP = getApplicationContext().getSharedPreferences("TeamData", MODE_PRIVATE);
+                String TeamNumberInputString, WeightInputString, DriveTrainTypeString, AutonPathsInputString, TopSpeedInputString, TopSpeedSecondGearInputString, CommentsString;
+                boolean FloorCubesBoolean, FloorConesBoolean, HumanPlayerCubesBoolean, HumanPlayerConesBoolean, ConeNoneBoolean, ConeHPBoolean, ConeUpBoolean, ConeDownBoolean, ConeAnyBoolean, AbleToDockBoolean, AbleToEngageBoolean, AbleToBuddyClimbBoolean, SecondGearBoolean, CubesFloorBoolean, CubesMiddleBoolean, CubesHighBoolean, ConesFloorBoolean, ConesMiddleBoolean, ConesHighBoolean;
+
+                TeamNumberInputString = new_SP.getString("TeamNumber", "");
+
+                if(new_SP.getString("Weight", "").equals("")){
+                    WeightInputString = "0";
+                } else {
+                    WeightInputString = new_SP.getString("Weight", "");
+                }
+
+                if(new_SP.getString("autonPaths", "").equals("")){
+                    AutonPathsInputString = "0";
+                } else {
+                    AutonPathsInputString = new_SP.getString("AutonPaths", "");
+                }
+
+                if(new_SP.getString("TopSpeed", "").equals("")){
+                    TopSpeedInputString = "0";
+                } else {
+                    TopSpeedInputString = new_SP.getString("TopSpeed", "");
+                }
+
+                if(new_SP.getString("TopSpeedSecondGear", "").equals("")){
+                    TopSpeedSecondGearInputString = "0";
+                } else {
+                    TopSpeedSecondGearInputString = new_SP.getString("TopSpeedSecondGear", "");
+                }
+
+                if(new_SP.getString("Comments", "").equals("")){
+                    CommentsString = "N/A";
+                } else {
+                    CommentsString = new_SP.getString("Comments", "");
+                }
+
+                FloorCubesBoolean = new_SP.getBoolean("FloorCubesCheck", false);
+                FloorConesBoolean = new_SP.getBoolean("FloorConesCheck", false);
+                HumanPlayerCubesBoolean = new_SP.getBoolean("HPCubesCheck", false);
+                HumanPlayerConesBoolean = new_SP.getBoolean("HPConesCheck", false);
+                ConeNoneBoolean = new_SP.getBoolean("ConePickupNoneCheck", false);
+                ConeHPBoolean = new_SP.getBoolean("ConePickupHPCheck", false);
+                ConeUpBoolean = new_SP.getBoolean("ConePickupUpCheck", false);
+                ConeDownBoolean = new_SP.getBoolean("ConePickupDownCheck", false);
+                ConeAnyBoolean = new_SP.getBoolean("ConePickupAnyCheck", false);
+                AbleToDockBoolean = new_SP.getBoolean("AbleToDock", false);
+                AbleToEngageBoolean = new_SP.getBoolean("AbleToEngage", false);
+                AbleToBuddyClimbBoolean = new_SP.getBoolean("AbleToBuddyClimb", false);
+                SecondGearBoolean = new_SP.getBoolean("SecondGear", false);
+                CubesFloorBoolean = new_SP.getBoolean("CubesFloorCheck", false);
+                CubesMiddleBoolean = new_SP.getBoolean("CubesMiddleCheck", false);
+                CubesHighBoolean = new_SP.getBoolean("CubesHighCheck", false);
+                ConesFloorBoolean = new_SP.getBoolean("ConesFloorCheck", false);
+                ConesMiddleBoolean = new_SP.getBoolean("ConesMiddleCheck", false);
+                ConesHighBoolean = new_SP.getBoolean("ConesHighCheck", false);
+
+                if(ConeAnyBoolean){
+                    ConeDownBoolean = true;
+                    ConeHPBoolean = true;
+                    ConeUpBoolean = true;
+                }
+
+                String finalQrOutput = "\n"
+                        + TeamNumberInputString
+                        + ',' + WeightInputString
+                        // + ',' + DriveTrainTypeString
+                        + ',' + AutonPathsInputString
+                        + ',' + TopSpeedInputString
+                        + ',' + SecondGearBoolean
+                        + ',' + TopSpeedSecondGearInputString
+                        + ',' + FloorCubesBoolean
+                        + ',' + FloorConesBoolean
+                        + ',' + HumanPlayerCubesBoolean
+                        + ',' + HumanPlayerConesBoolean
+                        + ',' + ConeNoneBoolean
+                        + ',' + ConeHPBoolean
+                        + ',' + ConeUpBoolean
+                        + ',' + ConeDownBoolean
+                        + ',' + ConeAnyBoolean
+                        + ',' + AbleToDockBoolean
+                        + ',' + AbleToEngageBoolean
+                        + ',' + AbleToBuddyClimbBoolean
+                        + ',' + CubesFloorBoolean
+                        + ',' + CubesMiddleBoolean
+                        + ',' + CubesHighBoolean
+                        + ',' + ConesFloorBoolean
+                        + ',' + ConesMiddleBoolean
+                        + ',' + ConesHighBoolean
+                        + ',' + CommentsString;
+
+
+
+                try {
+                    FileOutputStream fos = new FileOutputStream(scoutingDataTextFile, true);
+                    fos.write(finalQrOutput.getBytes());
+                    fos.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                SharedPreferences.Editor editor = sp.edit();
+                //using the editor to store the strings and booleans in the sp (green) that can be called from other screens as well
+                editor.putString("TeamNumber", "");
+                editor.putBoolean("FloorCubesCheck", false);
+                editor.putBoolean("FloorConesCheck", false);
+                editor.putBoolean("HPCubesCheck", false);
+                editor.putBoolean("HPConesCheck", false);
+                editor.putBoolean("ConePickupNoneCheck", false);
+                editor.putBoolean("ConePickupHPCheck", false);
+                editor.putBoolean("ConePickupUpCheck", false);
+                editor.putBoolean("ConePickupDownCheck", false);
+                editor.putBoolean("ConePickupAnyCheck", false);
+                editor.putString("Weight", "");
+                editor.putString("AutonPaths", "");
+                editor.putString("TopSpeed", "");
+                editor.putString("TopSpeedSecondGear", "");
+                editor.putBoolean("AbleToDock", false);
+                editor.putBoolean("AbleToBuddyClimb", false);
+                editor.putBoolean("SecondGear", false);
+                editor.putString("Comments", "");
+                editor.putBoolean("CubesFloorCheck", false);
+                editor.putBoolean("CubesMiddleCheck", false);
+                editor.putBoolean("CubesHighCheck", false);
+                editor.putBoolean("ConesFloorCheck", false);
+                editor.putBoolean("ConesMiddleCheck", false);
+                editor.putBoolean("ConesHighCheck", false);
+                //updates all the sp
+                editor.commit();
+
+                Intent intent  = new Intent(PictureScreen.this, Questions.class);
+                startActivity(intent);
             }
         });
 

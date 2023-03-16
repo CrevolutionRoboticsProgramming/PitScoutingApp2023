@@ -19,8 +19,8 @@ public class TechSpecs extends AppCompatActivity {
     ImageView background2, home2;
     CheckBox ableToDockCheck, ableToEngageCheck, ableToBuddyClimbCheck, secondGearCheck;
     SharedPreferences sp;
-    String WeightInputString, AutonPathsInputString, TopSpeedInputString, TopSpeedSecondGearInputString;
-    Boolean AbleToDockBoolean, AbleToEngageBoolean, AbleToBuddyClimbBoolean, SecondGearBoolean;
+    String weightInputString, autonPathsInputString, topSpeedInputString, topSpeedSecondGearInputString;
+    Boolean ableToDockBoolean, ableToEngageBoolean, ableToBuddyClimbBoolean, secondGearBoolean;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -95,45 +95,45 @@ public class TechSpecs extends AppCompatActivity {
                 //when the screen is changed all inputs will be saved with shared preferences
 
                 //making the inputs into a string for the sp
-                WeightInputString = weightInput.getText().toString();
-                AutonPathsInputString = numberOfAutonPathsInput.getText().toString();
-                TopSpeedInputString = topSpeedInput.getText().toString();
-                TopSpeedSecondGearInputString = topSpeedSecondGearInput.getText().toString();
+                weightInputString = weightInput.getText().toString();
+                autonPathsInputString = numberOfAutonPathsInput.getText().toString();
+                topSpeedInputString = topSpeedInput.getText().toString();
+                topSpeedSecondGearInputString = topSpeedSecondGearInput.getText().toString();
                 //check box inputs turned into a boolean
                 if (ableToDockCheck.isChecked()){
-                    AbleToDockBoolean = true;
+                    ableToDockBoolean = true;
                 } else {
-                    AbleToDockBoolean = false;
+                    ableToDockBoolean = false;
                 }
 
                 if (ableToEngageCheck.isChecked()){
-                    AbleToEngageBoolean = true;
+                    ableToEngageBoolean = true;
                 } else {
-                    AbleToEngageBoolean = false;
+                    ableToEngageBoolean = false;
                 }
 
                 if (ableToBuddyClimbCheck.isChecked()){
-                    AbleToBuddyClimbBoolean = true;
+                    ableToBuddyClimbBoolean = true;
                 } else {
-                    AbleToBuddyClimbBoolean = false;
+                    ableToBuddyClimbBoolean = false;
                 }
 
                 if (secondGearCheck.isChecked()){
-                    SecondGearBoolean = true;
+                    secondGearBoolean = true;
                 } else {
-                    SecondGearBoolean = false;
+                    secondGearBoolean = false;
                 }
 
                 //creating a editor for the sp and naming it editor
                 SharedPreferences.Editor editor = sp.edit();
                 //using the editor to store the strings and booleans in the sp (green) that can be called from other screens as well
-                editor.putString("Weight", WeightInputString);
-                editor.putString("AutonPaths", AutonPathsInputString);
-                editor.putString("TopSpeed", TopSpeedInputString);
-                editor.putString("TopSpeedSecondGear", TopSpeedSecondGearInputString);
-                editor.putBoolean("AbleToDock", AbleToEngageBoolean);
-                editor.putBoolean("AbleToBuddyClimb", AbleToBuddyClimbBoolean);
-                editor.putBoolean("SecondGear", SecondGearBoolean);
+                editor.putString("Weight", weightInputString);
+                editor.putString("AutonPaths", autonPathsInputString);
+                editor.putString("TopSpeed", topSpeedInputString);
+                editor.putString("TopSpeedSecondGear", topSpeedSecondGearInputString);
+                editor.putBoolean("AbleToDock", ableToEngageBoolean);
+                editor.putBoolean("AbleToBuddyClimb", ableToBuddyClimbBoolean);
+                editor.putBoolean("SecondGear", secondGearBoolean);
                 //updates all the sp
                 editor.commit();
 
@@ -148,45 +148,45 @@ public class TechSpecs extends AppCompatActivity {
                 //when the screen is changed all inputs will be saved with shared preferences
 
                 //making the inputs into a string for the sp
-                WeightInputString = weightInput.getText().toString();
-                AutonPathsInputString = numberOfAutonPathsInput.getText().toString();
-                TopSpeedInputString = topSpeedInput.getText().toString();
-                TopSpeedSecondGearInputString = topSpeedSecondGearInput.getText().toString();
+                weightInputString = weightInput.getText().toString();
+                autonPathsInputString = numberOfAutonPathsInput.getText().toString();
+                topSpeedInputString = topSpeedInput.getText().toString();
+                topSpeedSecondGearInputString = topSpeedSecondGearInput.getText().toString();
                 //check box inputs turned into a boolean
                 if (ableToDockCheck.isChecked()){
-                    AbleToDockBoolean = true;
+                    ableToDockBoolean = true;
                 } else {
-                    AbleToDockBoolean = false;
+                    ableToDockBoolean = false;
                 }
 
                 if (ableToEngageCheck.isChecked()){
-                    AbleToEngageBoolean = true;
+                    ableToEngageBoolean = true;
                 } else {
-                    AbleToEngageBoolean = false;
+                    ableToEngageBoolean = false;
                 }
 
                 if (ableToBuddyClimbCheck.isChecked()){
-                    AbleToBuddyClimbBoolean = true;
+                    ableToBuddyClimbBoolean = true;
                 } else {
-                    AbleToBuddyClimbBoolean = false;
+                    ableToBuddyClimbBoolean = false;
                 }
 
                 if (secondGearCheck.isChecked()){
-                    SecondGearBoolean = true;
+                    secondGearBoolean = true;
                 } else {
-                    SecondGearBoolean = false;
+                    secondGearBoolean = false;
                 }
 
                 //creating a editor for the sp and naming it editor
                 SharedPreferences.Editor editor = sp.edit();
                 //using the editor to store the strings and booleans in the sp (green) that can be called from other screens as well
-                editor.putString("Weight", WeightInputString);
-                editor.putString("AutonPaths", AutonPathsInputString);
-                editor.putString("TopSpeed", TopSpeedInputString);
-                editor.putString("TopSpeedSecondGear", TopSpeedSecondGearInputString);
-                editor.putBoolean("AbleToDock", AbleToEngageBoolean);
-                editor.putBoolean("AbleToBuddyClimb", AbleToBuddyClimbBoolean);
-                editor.putBoolean("SecondGear", SecondGearBoolean);
+                editor.putString("Weight", weightInputString);
+                editor.putString("AutonPaths", autonPathsInputString);
+                editor.putString("TopSpeed", topSpeedInputString);
+                editor.putString("TopSpeedSecondGear", topSpeedSecondGearInputString);
+                editor.putBoolean("AbleToDock", ableToEngageBoolean);
+                editor.putBoolean("AbleToBuddyClimb", ableToBuddyClimbBoolean);
+                editor.putBoolean("SecondGear", secondGearBoolean);
                 //updates all the sp
                 editor.commit();
 
@@ -201,45 +201,45 @@ public class TechSpecs extends AppCompatActivity {
                 //when the screen is changed all inputs will be saved with shared preferences
 
                 //making the inputs into a string for the sp
-                WeightInputString = weightInput.getText().toString();
-                AutonPathsInputString = numberOfAutonPathsInput.getText().toString();
-                TopSpeedInputString = topSpeedInput.getText().toString();
-                TopSpeedSecondGearInputString = topSpeedSecondGearInput.getText().toString();
+                weightInputString = weightInput.getText().toString();
+                autonPathsInputString = numberOfAutonPathsInput.getText().toString();
+                topSpeedInputString = topSpeedInput.getText().toString();
+                topSpeedSecondGearInputString = topSpeedSecondGearInput.getText().toString();
                 //check box inputs turned into a boolean
                 if (ableToDockCheck.isChecked()){
-                    AbleToDockBoolean = true;
+                    ableToDockBoolean = true;
                 } else {
-                    AbleToDockBoolean = false;
+                    ableToDockBoolean = false;
                 }
 
                 if (ableToEngageCheck.isChecked()){
-                    AbleToEngageBoolean = true;
+                    ableToEngageBoolean = true;
                 } else {
-                    AbleToEngageBoolean = false;
+                    ableToEngageBoolean = false;
                 }
 
                 if (ableToBuddyClimbCheck.isChecked()){
-                    AbleToBuddyClimbBoolean = true;
+                    ableToBuddyClimbBoolean = true;
                 } else {
-                    AbleToBuddyClimbBoolean = false;
+                    ableToBuddyClimbBoolean = false;
                 }
 
                 if (secondGearCheck.isChecked()){
-                    SecondGearBoolean = true;
+                    secondGearBoolean = true;
                 } else {
-                    SecondGearBoolean = false;
+                    secondGearBoolean = false;
                 }
 
                 //creating a editor for the sp and naming it editor
                 SharedPreferences.Editor editor = sp.edit();
                 //using the editor to store the strings and booleans in the sp (green) that can be called from other screens as well
-                editor.putString("Weight", WeightInputString);
-                editor.putString("AutonPaths", AutonPathsInputString);
-                editor.putString("TopSpeed", TopSpeedInputString);
-                editor.putString("TopSpeedSecondGear", TopSpeedSecondGearInputString);
-                editor.putBoolean("AbleToDock", AbleToEngageBoolean);
-                editor.putBoolean("AbleToBuddyClimb", AbleToBuddyClimbBoolean);
-                editor.putBoolean("SecondGear", SecondGearBoolean);
+                editor.putString("Weight", weightInputString);
+                editor.putString("AutonPaths", autonPathsInputString);
+                editor.putString("TopSpeed", topSpeedInputString);
+                editor.putString("TopSpeedSecondGear", topSpeedSecondGearInputString);
+                editor.putBoolean("AbleToDock", ableToEngageBoolean);
+                editor.putBoolean("AbleToBuddyClimb", ableToBuddyClimbBoolean);
+                editor.putBoolean("SecondGear", secondGearBoolean);
                 //updates all the sp
                 editor.commit();
 
@@ -254,45 +254,45 @@ public class TechSpecs extends AppCompatActivity {
                 //when the screen is changed all inputs will be saved with shared preferences
 
                 //making the inputs into a string for the sp
-                WeightInputString = weightInput.getText().toString();
-                AutonPathsInputString = numberOfAutonPathsInput.getText().toString();
-                TopSpeedInputString = topSpeedInput.getText().toString();
-                TopSpeedSecondGearInputString = topSpeedSecondGearInput.getText().toString();
+                weightInputString = weightInput.getText().toString();
+                autonPathsInputString = numberOfAutonPathsInput.getText().toString();
+                topSpeedInputString = topSpeedInput.getText().toString();
+                topSpeedSecondGearInputString = topSpeedSecondGearInput.getText().toString();
                 //check box inputs turned into a boolean
                 if (ableToDockCheck.isChecked()){
-                    AbleToDockBoolean = true;
+                    ableToDockBoolean = true;
                 } else {
-                    AbleToDockBoolean = false;
+                    ableToDockBoolean = false;
                 }
 
                 if (ableToEngageCheck.isChecked()){
-                    AbleToEngageBoolean = true;
+                    ableToEngageBoolean = true;
                 } else {
-                    AbleToEngageBoolean = false;
+                    ableToEngageBoolean = false;
                 }
 
                 if (ableToBuddyClimbCheck.isChecked()){
-                    AbleToBuddyClimbBoolean = true;
+                    ableToBuddyClimbBoolean = true;
                 } else {
-                    AbleToBuddyClimbBoolean = false;
+                    ableToBuddyClimbBoolean = false;
                 }
 
                 if (secondGearCheck.isChecked()){
-                    SecondGearBoolean = true;
+                    secondGearBoolean = true;
                 } else {
-                    SecondGearBoolean = false;
+                    secondGearBoolean = false;
                 }
 
                 //creating a editor for the sp and naming it editor
                 SharedPreferences.Editor editor = sp.edit();
                 //using the editor to store the strings and booleans in the sp (green) that can be called from other screens as well
-                editor.putString("Weight", WeightInputString);
-                editor.putString("AutonPaths", AutonPathsInputString);
-                editor.putString("TopSpeed", TopSpeedInputString);
-                editor.putString("TopSpeedSecondGear", TopSpeedSecondGearInputString);
-                editor.putBoolean("AbleToDock", AbleToEngageBoolean);
-                editor.putBoolean("AbleToBuddyClimb", AbleToBuddyClimbBoolean);
-                editor.putBoolean("SecondGear", SecondGearBoolean);
+                editor.putString("Weight", weightInputString);
+                editor.putString("AutonPaths", autonPathsInputString);
+                editor.putString("TopSpeed", topSpeedInputString);
+                editor.putString("TopSpeedSecondGear", topSpeedSecondGearInputString);
+                editor.putBoolean("AbleToDock", ableToEngageBoolean);
+                editor.putBoolean("AbleToBuddyClimb", ableToBuddyClimbBoolean);
+                editor.putBoolean("SecondGear", secondGearBoolean);
                 //updates all the sp
                 editor.commit();
 

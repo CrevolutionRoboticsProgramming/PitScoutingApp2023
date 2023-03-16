@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -69,7 +70,10 @@ public class Questions extends AppCompatActivity {
         conePickupAnyCheck = findViewById(R.id.conePickupAny);
 
         drivetrainSpinner = findViewById(R.id.drivetrain);
+        String[] spinnerOptions = new String[]{"Swerve Drive", "Tank Drive", "Option 3", "Option 4?", "Other"};
 
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, spinnerOptions);
+        drivetrainSpinner.setAdapter(adapter);
 
         //getting shared preferences
         sp = getSharedPreferences("TeamData", MODE_PRIVATE);
