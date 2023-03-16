@@ -68,6 +68,9 @@ public class PictureScreen extends AppCompatActivity {
         backImageView = findViewById(R.id.backPic);
         sideImageView = findViewById(R.id.sidePic);
 
+        frontImageView.setImageResource(R.drawable.nadefaultwhite);
+        backImageView.setImageResource(R.drawable.nadefaultwhite);
+        sideImageView.setImageResource(R.drawable.nadefaultwhite);
 
         File scoutingDataTextFile = new File(Environment.getExternalStoragePublicDirectory(
                 Environment.DIRECTORY_DOCUMENTS), "2023PitScoutingData.txt");
